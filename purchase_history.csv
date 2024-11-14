@@ -1,0 +1,16 @@
+product_id,mobile_name,brand_name,ratings,price,price_range,purchase_count,Age,Income,Student,Credit_Rating
+1,Galaxy S21,Samsung,4.5,799,High,120,Young,High,No,Fair
+2,iPhone 13,Apple,4.7,999,High,150,Young,High,No,Excellent
+3,Pixel 6,Google,4.4,599,Medium,80,Middle,Medium,No,Fair
+4,OnePlus 9,OnePlus,4.6,729,High,95,Senior,Medium,Yes,Fair
+5,Xiaomi Mi 11,Xiaomi,4.3,549,Medium,110,Senior,Low,Yes,Fair
+6,Motorola Edge,Motorola,4.2,499,Low,60,Senior,Low,Yes,Excellent
+7,Galaxy Note 20,Samsung,4.5,899,High,140,Middle,Low,Yes,Excellent
+8,iPhone 12,Apple,4.6,799,High,130,Young,Medium,No,Fair
+9,Pixel 5,Google,4.4,699,Medium,70,Young,Low,Yes,Fair
+10,OnePlus 8T,OnePlus,4.3,649,Medium,85,Senior,Medium,Yes,Excellent
+11,Xiaomi Redmi Note 10,Xiaomi,4.2,299,Low,50,Middle,Medium,No,Fair
+12,Galaxy A52,Samsung,4.4,499,Low,90,Young,High,No,Excellent
+13,iPhone SE,Apple,4.3,399,Low,40,Young,Low,Yes,Fair
+14,Pixel 4a,Google,4.1,349,Low,30,Middle,Low,Yes,Excellent
+15,Nokia 5.4,Nokia,4.0,249,Low,20,Senior,Low,Yes,Fair

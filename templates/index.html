@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Suggestions</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Product Suggestions</h1>
+    <form method="POST" action="/">
+        <label for="age">Age:</label>
+        <select id="age" name="age" required>
+            <option value="Young">Young</option>
+            <option value="Middle">Middle</option>
+            <option value="Senior">Senior</option>
+        </select>
+        
+        <label for="income">Income:</label>
+        <select id="income" name="income" required>
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+        </select>
+        
+        <label for="student">Student:</label>
+        <select id="student" name="student" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        
+        <label for="credit_rating">Credit Rating:</label>
+        <select id="credit_rating" name="credit_rating" required>
+            <option value="Fair">Fair</option>
+            <option value="Excellent">Excellent</option>
+        </select>
+        
+        <button type="submit">Get Suggestions</button>
+    </form>
+
+    {% if suggestions %}
+    <h2>Suggestions</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Product ID</th>
+                <th>Mobile Name</th>
+                <th>Brand Name</th>
+                <th>Ratings</th>
+                <th>Price</th>
+                <th>Price Range</th>
+                <th>Purchase Count</th>
+                <th>Age</th>
+                <th>Income</th>
+                <th>Student</th>
+                <th>Credit Rating</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for suggestion in suggestions %}
+            <tr>
+                <td>{{ suggestion['product_id'] }}</td>
+                <td>{{ suggestion['mobile_name'] }}</td>
+                <td>{{ suggestion['brand_name'] }}</td>
+                <td>{{ suggestion['ratings'] }}</td>
+                <td>{{ suggestion['price'] }}</td>
+                <td>{{ suggestion['price_range'] }}</td>
+                <td>{{ suggestion['purchase_count'] }}</td>
+                <td>{{ suggestion['Age'] }}</td>
+                <td>{{ suggestion['Income'] }}</td>
+                <td>{{ suggestion['Student'] }}</td>
+                <td>{{ suggestion['Credit_Rating'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <p>No suggestions available.</p>
+    {% endif %}
+</body>
+</html>
